@@ -37,4 +37,4 @@ console.log(myn1)
 console.log("B" , myarr);
 
 console.log("c" , myarr.splice(1,4))        // splice slices main array (original array)
-console.log(myarr);
+console.log(myarr); 
