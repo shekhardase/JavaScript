@@ -1,7 +1,8 @@
 // // SingleTon
 
 
-// // Object Literals
+// the below are object literals
+
 
 
 // Object.create             // constructor method
