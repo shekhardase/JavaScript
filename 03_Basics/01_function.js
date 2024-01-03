@@ -79,16 +79,6 @@
 // }
 
 // handleObject({
-//     username:"sam",
-//     price:121
-// })
-
-
-const mynewarray = [1,2,3,4,4]
-function returnSecondValue(getArray)
-{
-    return getArray[1]
-}
 
 console.log(returnSecondValue(mynewarray));
 console.log(returnSecondValue([1,2,3,4,4]));
