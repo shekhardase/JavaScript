@@ -1,2 +1,2 @@
 # JavaScript
-Practice Repo for JS
+Practice Repo for JS 
