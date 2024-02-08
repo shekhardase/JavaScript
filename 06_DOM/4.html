@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code tuts</title>
+</head>
+
+<body style="background-color: brown;">
+    <ul class="language ">
+        <li>Javascript</li>
+    </ul>
+</body>
+
+<script>
+    function addlang(langname) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langname}`
+        document.querySelector('.language')
+        apppendChildL(li)
+    }
+
+    addlang("Python")
+    addlang("Java")
+
+    function AddlangOptimal(langname) {
+        const la = document.createElement(li)
+        const addtext = document.createTextNode(langname)
+        li.apppendChildL(addtext)
+    }
+
+    AddlangOptimal("Golang")
+
+    //EDIT
+    const secondlang = document.querySelector("li:nth-child(2)")
+    //    secondlang.innerHTML = "MOJO"
+    const newli = document.createElement('li')
+    newli.textcontent = "MOJO"
+    secondlang.replacewith(newli)
+
+
+    //remove
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove();
+
+
+</script>
+
+</html>
