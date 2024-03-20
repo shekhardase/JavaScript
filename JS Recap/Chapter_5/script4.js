@@ -29,16 +29,15 @@ console.log(arr);
 
 // for of
 
-let b = [0,0,0,0,0,0,0,0]
+let b = [0, 0, 0, 0, 0, 0, 0, 0]
 
-for(let i of b)
-{
+for (let i of b) {
     console.log(b[i]);
 }
 
 
 // for in loop
-let obj = {a: 1, b: 2, c: 3};
+let obj = { a: 1, b: 2, c: 3 };
 
 for (let key in obj) {
     console.log(key + ": " + obj[key]);
