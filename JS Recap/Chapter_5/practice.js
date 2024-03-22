@@ -1,6 +1,7 @@
 
 // // let a = []
 
+// not working
 // // for(let i = 0; i < a.length;i++)
 // // {
 // //  a[i] = prompt("enter the number " )
@@ -13,11 +14,11 @@
 
 
 // // let a = [];
-// // let input = prompt("Enter a number or type 'done' to finish:");
+// // let input = prompt("Enter a number or type '0' to finish:");
 
-// // while (input !== 'done') {
+// // while (input !== '0') {
 // //     a.push(input);
-// //     input = prompt("Enter a number or type 'done' to finish:");
+// //     input = prompt("Enter a number or type '0' to finish:");
 // // }
 
 // // for (let i = 0; i < a.length; i++) {
