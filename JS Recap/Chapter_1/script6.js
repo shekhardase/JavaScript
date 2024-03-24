@@ -38,4 +38,4 @@ let comp4 = 23;
 console.log(comp1 == comp4);
 
 
-// === checks type 
+// === checks type   
