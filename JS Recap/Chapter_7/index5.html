@@ -1,0 +1,60 @@
+<!-- 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="one" id="one"> THIS IS CLASSS1 </div>
+    <div class="two" id="one"> THIS IS CLASSS2 </div>
+</body>
+
+
+<script>
+    console.log(one);
+</script>
+
+</html>
+
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Elements in Closet</title>
+</head>
+
+<body>
+    <div id="closet">
+        <div class="item red">Red Item</div>
+        <div class="item blue">Blue Item</div>
+        <div class="item green">Green Item</div>
+    </div>
+
+    <script>
+        // Find all items within the closet that have the class 'item'
+        const items = document.querySelectorAll('#closet .item');
+
+        // Iterate over the found items
+        items.forEach(item => {
+            // Check if the item has the class 'blue'
+            if (item.classList.contains('blue')) {
+                // If it does, log its text content
+                console.log(item.textContent);
+            }
+        });
+    </script>
+</body>
+
+</html>
