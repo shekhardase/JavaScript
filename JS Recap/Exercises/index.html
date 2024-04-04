@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<style>
+    nav {
+        display: flex;
+        /* align-items: center; */
+
+    }
+
+    a {
+        /* margin: auto; */
+        padding-left: 10px;
+    }
+</style>
+
+<body>
+    <h1>task 1</h1>
+    <p>New nav bar</p>
+    <p>New nav bar</p>
+    <p>New nav bar</p>
+    <p>New nav bar</p>
+    <p>New nav bar</p>
+    <p>New nav bar</p>
+    <p>New nav bar</p>
+    <p>New nav bar</p>
+    <nav class="navbar">
+
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+
+    <table class="la">
+        <td>Hello</td>
+        <tr>Hello1</tr>
+        <tr>Hello2</tr>
+        <tr>Hello3</tr>
+        <tr>Hello4</tr>
+        <tr>Hello5</tr>
+    </table>
+</body>
+
+
+<script>
+
+    // let g = document.getElementsByClassName("navbar")[0]
+    // let f = document.querySelector(".navbar")
+    // console.log(f);
+    // console.log(g);
+    // f.style.color = 'green'
+
+    // g.style.background = 'red'
+
+    // let child1 = document.firstElementChild();
+    // console.log(child1);
+
+    // let firstChild = document.documentElement.firstElementChild;
+    // console.log(firstChild);
+
+    let g = document.getElementsByTagName("nav")[0].firstElementChild
+    // console.log(g);
+    g.style.color = 'red'
+
+    let g2 = document.getElementsByTagName("nav")[1]
+    console.log(g2);
+
+    let g3= document.getElementsByTagName("nav")[0].lastElementChild
+    g3.style.color = 'green'
+
+    Array.from(document.getElementsByTagName('p')).forEach(element => {
+        element.style.color = 'red'
+    });
+
+</script>
+
+</html>
