@@ -5,81 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
 </head>
 
-<style>
-    nav {
-        display: flex;
-        /* align-items: center; */
 
+<style>
+    * {
+        box-sizing: border-box;
     }
 
-    a {
-        /* margin: auto; */
-        padding-left: 10px;
+    #new {
+        /* background-color: aliceblue; */
+        height: 20vw;
+        width: 99vw;
+
+        padding: 1vw;
+        /* margin-le; */
+        border: 0.2vw solid black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3vw;
+
+
     }
 </style>
 
 <body>
-    <h1>task 1</h1>
-    <p>New nav bar</p>
-    <p>New nav bar</p>
-    <p>New nav bar</p>
-    <p>New nav bar</p>
-    <p>New nav bar</p>
-    <p>New nav bar</p>
-    <p>New nav bar</p>
-    <p>New nav bar</p>
-    <nav class="navbar">
+    <h1> Joke Joke Website </h1>
+    <div id="new">
+        <div id="container">
+            Joke Coming up !!!
+        </div>
+        <div id="container2">
+            Joke Coming up !!!
+        </div>
+        <div id="container3">
+            Joke Coming up !!!
+        </div>
+        <div id="container4">
+            Joke Coming up !!!
+        </div>
+        <div id="container5">
+            Joke Coming up !!!
+        </div>
+    </div>
 
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-
-
-    <table class="la">
-        <td>Hello</td>
-        <tr>Hello1</tr>
-        <tr>Hello2</tr>
-        <tr>Hello3</tr>
-        <tr>Hello4</tr>
-        <tr>Hello5</tr>
-    </table>
 </body>
 
-
 <script>
+    let jokes = ['Did you hear about the first restaurant to open on the moon?It had great food, but no atmosphere.'
+        , "Why don’t scientists trust atoms? Because they make up everything ! ", " What do dentists call their x-rays? Tooth pics!"
+        , "Why do ducks have feathers? To cover their butt quacks! ", " Why do ducks have feathers? To cover their butt quacks!", "FK OFF", " ok" , "NO"]
 
-    // let g = document.getElementsByClassName("navbar")[0]
-    // let f = document.querySelector(".navbar")
-    // console.log(f);
-    // console.log(g);
-    // f.style.color = 'green'
+    // let j1 = Math.random.jokes
+    let j1 = jokes[Math.floor(Math.random() * jokes.length)];
+    let j2 = jokes[Math.floor(Math.random() * jokes.length)];
+    let j3 = jokes[Math.floor(Math.random() * jokes.length)];
+    let j4 = jokes[Math.floor(Math.random() * jokes.length)];
+    let j5 = jokes[Math.floor(Math.random() * jokes.length)];
+    // let j6 = jokes[Math.floor(Math.random() * jokes.length)];
 
-    // g.style.background = 'red'
 
-    // let child1 = document.firstElementChild();
-    // console.log(child1);
+    // console.log(j1);
+    document.getElementById("container").innerHTML = j1;
+    document.getElementById("container2").innerHTML = j2;
+    document.getElementById("container3").innerHTML = j3;
+    document.getElementById("container4").innerHTML = j4;
+    document.getElementById("container5").innerHTML = j5;
+    // document.getElementById("container").innerHTML = j1;
 
-    // let firstChild = document.documentElement.firstElementChild;
-    // console.log(firstChild);
-
-    let g = document.getElementsByTagName("nav")[0].firstElementChild
-    // console.log(g);
-    g.style.color = 'red'
-
-    let g2 = document.getElementsByTagName("nav")[1]
-    console.log(g2);
-
-    let g3= document.getElementsByTagName("nav")[0].lastElementChild
-    g3.style.color = 'green'
-
-    Array.from(document.getElementsByTagName('p')).forEach(element => {
-        element.style.color = 'red'
-    });
-
+    // console.log(content);
 </script>
 
 </html>
