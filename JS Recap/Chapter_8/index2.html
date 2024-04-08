@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="first" class="hey" style="background-color: aqua;">
+
+        Hey I am first container
+
+    </div>
+    Hello world
+</body>
+
+
+<script>
+    // let first = document.getElementById("first");
+    var a = first.getAttribute("class")
+    console.log(a);
+    console.log(first.hasAttribute("class"));   // if yes then true else false
+    console.log(first.hasAttribute("style"));
+
+    // first.setAttribute("hidden ", "true")
+    // first.getAttribute("class" , "true Sachin")
+
+    // remove class
+
+    // console.log(first.removeAttribute("class"))
+    first.removeAttribute("class")
+
+    console.log(first.attributes)
+</script>
+
+</html>
