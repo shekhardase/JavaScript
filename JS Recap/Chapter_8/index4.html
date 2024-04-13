@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .products {
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .cart {
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <div class="container"></div>
+    <header>
+        <h1>Welcome to our E-commerce Store</h1>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Featured Products</h2>
+            <!-- Add your product cards here -->
+        </section>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <!-- Add your cart items here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 E-commerce Store. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+
+
+
+<script>
+    let i = document.getElementsByClassName("container")
+    console.log(i);
+
+    // let a;
+    // a = "<p> THIS IS NEW </p>"
+
+    let container = document.querySelector(".container");
+    let heading = document.querySelector("header h1");
+    let newContent = document.createElement("p");
+    newContent.innerHTML = "This is new content added using DOM";
+    container.insertAdjacentElement("afterend", newContent);
+
+    
+
+</script>
+
+
+</html>
