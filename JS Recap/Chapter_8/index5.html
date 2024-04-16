@@ -91,7 +91,7 @@
 
 <body>
 
-    <button onclick="toggleClasses()">Click me</button>
+    <button class="has" onclick="toggleClasses()">Click me</button>
     <div id="first" class="red">
         <span>Hey Am here</span>
     </div>
@@ -105,8 +105,39 @@
             element.classList.remove("red", "yellow", "blue", "black");
             element.classList.add(randomClass);
         }
+
+        setInterval(function () {
+            var button = document.querySelector(".has");
+            button.click();
+        }, 500);
+
     </script>
 
+    <!-- The querySelector method is used to select elements in the HTML document based on a CSS selector. It allows you to
+    target elements using a wide range of selectors, such as class names, IDs, element types, attribute values, and
+    more.
+
+    In the provided code excerpt, document.querySelector(".has") is used to select an element with the class name "has".
+    This method returns the first element that matches the specified selector. If no element is found, it returns null.
+
+    Using querySelector provides more flexibility compared to directly accessing elements by class name or other
+    specific attributes. Here are a few reasons why querySelector is commonly used:
+
+    CSS Selector Support: querySelector allows you to use CSS selectors, which are powerful and expressive. You can
+    select elements based on various criteria, such as class names, IDs, element types, attribute values, and even
+    complex combinations of selectors.
+
+    Single Element Selection: querySelector returns the first matching element, which is useful when you only need to
+    work with a single element. If you use methods like getElementsByClassName, you would need to access the specific
+    element from the returned collection.
+
+    Code Readability: Using querySelector with CSS selectors can make your code more readable and concise. It allows you
+    to express your intent in a clear and familiar way, similar to how you would select elements in CSS.
+
+    Here's an example to illustrate the usage of querySelector:
+
+    Overall, querySelector provides a versatile and convenient way to select elements in the HTML document based on
+    various criteria, making it a popular choice for element selection in JavaScript. -->
 </body>
 
 </html>
