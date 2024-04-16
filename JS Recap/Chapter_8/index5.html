@@ -1,3 +1,63 @@
+<!-- 
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .red {
+            background-color: red;
+            color: white;
+        }
+
+        .yellow {
+            background-color: yellow;
+            color: black;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+
+        .black {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="toggleClasses()">Click me</button>
+    <div id="first" class="red">
+        <span>Hey Am here</span>
+    </div>
+
+    <script>
+        // classList
+        function toggleClasses() {
+            var element = document.getElementById("first");
+            element.classList.toggle("red");
+            element.classList.toggle("blue");
+            element.classList.toggle("yellow");
+            element.classList.toggle("black");
+        }
+    </script>
+
+</body>
+
+</html>-->
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,39 +65,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .red {
+            background-color: red;
+            color: white;
+        }
+
+        .yellow {
+            background-color: yellow;
+            color: black;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+
+        .black {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 
-
-
-
-<style>
-    .red {
-        background-color: red;
-        color: white;
-    }
-
-    .yello {
-        background-color: yellow;
-        color: black;
-    }
-</style>
-
-<!-- // id sirf ek hoti hai
-// classes bohot ho sakti hai -->
-
 <body>
-    <div id="first" , class="yello text-dark">
 
+    <button onclick="toggleClasses()">Click me</button>
+    <div id="first" class="red">
         <span>Hey Am here</span>
-
     </div>
+
+    <script>
+        // classList
+        function toggleClasses() {
+            var element = document.getElementById("first");
+            var classes = ["red", "yellow", "blue", "black"];
+            var randomClass = classes[Math.floor(Math.random() * classes.length)];
+            element.classList.remove("red", "yellow", "blue", "black");
+            element.classList.add(randomClass);
+        }
+    </script>
+
 </body>
-
-<script>
-    first.className = "red"
-    first.classList.remove("yello")
-
-
-</script>
 
 </html>
