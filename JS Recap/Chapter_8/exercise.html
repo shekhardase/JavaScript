@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    .bulb {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: yellowgreen;
+    }
+
+    .bulb.glow {
+        box-shadow: 0 0 1000px rgb(255, 0, 0);
+        border: 100px solid red;
+    }
+</style>
+
+<body>
+
+    <!-- <div class="container">
+        <button class="one" onclick="alert('Ek CHAI')"> EK CHAI </button>
+        <button class="two" onclick="alert('Ek biscute')"> EK biscute </button>
+        <button class="three" onclick="alert('Teri mee ki chuuu')"> Gand mara </button>
+    </div> -->
+
+    <h1>BookMarks</h1>
+
+    <button id="myButton">CLICK </button>
+    <button id="Google">Google</button>
+    <button id="yt">yt</button>
+    <button id="oi">oi</button>
+
+    <center><div class="bulb"></div></center>
+
+</body>
+
+
+<script>
+    let a = document.getElementById("Google").addEventListener("click", function () {
+        window.location = "https://www.google.com"
+    })
+    let b = document.getElementById("yt").addEventListener("click", function () {
+        window.location = "https://www.youtube.com"
+    })
+    let c = document.getElementById("oi").addEventListener("click", function () {
+        window.location = "https://www.oi.com"
+    })
+
+
+    let handleClick = () => {
+        // Code to handle button click event
+        // document.body.style.backgroundColor = "red";
+        // document.body.style.backgroundColor="white"
+        document.body.style.backgroundColor = document.body.style.backgroundColor === "red" ? "yellow" : "red";
+    };
+
+    let handleClick2 = () => {
+        // Code to handle button click event
+        // document.body.style.backgroundColor = "red";
+        // document.body.style.backgroundColor="white"
+        // document.body.style.backgroundColor = document.body.style.backgroundColor === "red" ? "yellow" : "red";
+
+        let bulb = document.querySelector('.bulb');
+        bulb.classList.toggle('glow');
+    };
+
+
+
+
+    // Example usage:
+    let button = document.getElementById("myButton");
+    button.addEventListener("click", handleClick);
+
+    // setInterval(() => {
+        // handleClick()
+    // }, 500);
+
+    setInterval(() => {
+        handleClick2()
+    }, 500);
+
+
+
+
+</script>
+
+</html>
