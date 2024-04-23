@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    // // the below is example fo sync programming 
+    // let a = prompt("Whats your name ??? ")
+    // let b = prompt("Whats your age ???")
+    // let c = prompt("Whats your >>>")
+
+
+    // // Async programming
+
+    // console.log('start');                 // this will throw in background
+    // setTimeout(function () {
+    //     console.log("Hey>>> ");
+    // }, 2000)
+
+
+
+    // CallBack Functions 
+    function loadscript(src) {
+        var script = document.createElement("script")
+        script.src = src;
+script.onload = function()
+{
+    console.log("loaded script with src");
+}
+        document.body.appendChild(script);
+
+    }
+
+    loadscript("https://www.youtube.com/watch?v=IJlGpI6l92U&list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR&index=52")
+
+
+
+</script>
+
+</html>
