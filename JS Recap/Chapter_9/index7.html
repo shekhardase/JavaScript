@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+    let p1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("value 1");
+        }, 1000);
+    })
+
+    let p2 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            // resolve("value 2");
+            reject(new Error("ARE CHUD GAI !!!"));
+        }, 2000);
+    })
+
+    let p3 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("value 3");
+        }, 3000)
+    })
+
+    // p1.then((value) => {
+
+    //     console.log(value);
+    // })
+
+    // p2.then((value) => {
+    //     console.log(value);
+    // })
+
+    // p3.then((value) => {
+    //     console.log(value);
+    // })
+
+    // // to get all value (All 3 value) we can use another promise
+
+
+    // let promise_all = Promise.all([p1, p2, p3])        // bue evem if one promise fail we cannot get promise_all values
+    // let promise_all = Promise.allSettled([p1, p2, p3])
+    // let promise_all = Promise.race([p1, p2, p3])
+    // let promise_all = Promise.any([p1, p2, p3])
+    // let promise_all = Promise.resolve(6)
+    let promise_all = Promise.reject(() => { })
+    console.log(new Error("LAUDU"));
+
+
+    promise_all.then((value) => {
+        console.log(value)
+    })
+
+
+</script>
+
+</html>
