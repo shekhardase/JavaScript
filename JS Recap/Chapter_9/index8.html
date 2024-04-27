@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    // async and await function 
+    // there is special syntax to work with promises in js 
+    // with help of async and await syntax inside function
+
+
+    // kisibhi function ko async bana sakte hai 
+    // aur uske under promise ko await kar sakte hai 
+
+
+    async function shekhar() {           // async -> ensures the function will return promise
+        let latur_weather = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("39 deg")
+            }, 2000)
+        })
+        // latur_weather.then(alert)
+        let Nanded_weather = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("30 deg")
+            }, 5000)
+        })
+        // Nanded_weather.then(alert)
+
+        console.log("Fetching Weather for latur please Wait ... ");
+        let laturW = await latur_weather
+        console.log("Fetching Weather for Latur Completed - " + laturW);
+
+
+        console.log("Fetching Weather for latur please Wait ... ");
+        let nandedW = await Nanded_weather
+        console.log("Fetching Weather for Nanded Completed - " + nandedW);
+
+        return [laturW, nandedW]
+    }
+
+    const cherry = async () => {
+        console.log("This is Cherry Function  Waiting to Run ");
+    }
+    const main1 = async () => {
+        console.log("WelCome to weather control room");
+        let b = await shekhar()
+        let a = await cherry();
+
+    }
+    main1()
+
+    // console.log(b);
+
+</script>
+
+</html>
