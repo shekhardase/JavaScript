@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    // Error Object in Javascript
+    // try {
+    //     console.log(Shekhar);
+    //     throw new ReferenceError("U FUK U");
+    // }
+    // catch (error) {
+    //     // console.log(error.message);
+    //     // console.log(error.name);
+    //     console.log(error.stack);
+    // }
+
+    try {
+        let age = prompt("Enter Your Age ... ")
+        age = Number.parseInt(age)
+        if (age > 120) {
+            throw new ReferenceError("This is Probably not true")
+        }
+
+    }
+    catch (error) {
+        console.log(error.name);
+        console.log(error.message);
+        console.log(error.stack);
+    }
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>
