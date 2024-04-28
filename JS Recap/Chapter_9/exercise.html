@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    // want to load a js file in browser using promise and alert if it is done
+
+
+    // let myPromise = new Promise(function (myResolve, myReject) {
+    //     fetch('E:\Projects\JS Recap\JS Recap\Chapter_9\exercise.html')
+    //         .then(function (response) {
+    //             if (response.ok) {
+    //                 myResolve(); // resolve the promise if the file is successfully loaded
+    //             } else {
+    //                 myReject(); // reject the promise if there is an error loading the file
+    //             }
+    //         })
+    //         .catch(function (error) {
+    //             myReject(); // reject the promise if there is an error fetching the file
+    //         });
+
+
+    //     myResolve(); // when successful
+    //     myReject();  // when error
+    // });
+
+    // // "Consuming Code" (Must wait for a fulfilled Promise)
+    // myPromise.then(
+    //     function (value) {
+    //         alert("Value Success")
+    //     },
+    //     function (error) {
+    //         alert("Value Failure")
+    //     }
+    // );
+
+
+
+
+    // let c = 0;
+
+    // let load = new Promise((resolve, reject) => {
+    //     if (c == 0) {
+    //         resolve("YES");
+    //     } else {
+    //         reject("NO");
+    //     }
+    // });
+
+    // load.then((result) => {
+    //     alert("Promise resolved with result: " + result);
+    // })
+    //     .catch((error) => {
+    //         alert("Promise rejected with error: " + error);
+    //     });
+
+
+    // Basic Promise Creation:
+    // Write a function called delayedResponse that returns a promise. The promise should resolve after a delay of 3 seconds with the message "Response received".
+
+
+    // function generateRandomNumber() {
+
+    // }
+
+    // console.log(generateRandomNumber());
+
+
+    // function delayedResponse() {
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             let c = Math.floor(Math.random() * 10) + 1;
+    //             console.log(c);
+    //             if (c > 5) {
+    //                 resolve("Greater than 5")
+    //             }
+    //             else {
+    //                 reject("LESS THAN 5")
+    //             }
+    //         }, 3000)
+
+    //     })
+    //         .then((result) => {
+    //             console.log(result);
+    //             // console.log(c);
+    //         }).catch((err) => {
+    //             console.log("Error Occured");
+    //         });
+    // }
+
+    // delayedResponse();
+
+
+    // function promise1() {
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             resolve("Promise 1 resolved");
+    //         }, 1000); // Resolves after 1 second
+    //     });
+    // }
+
+    // function promise2() {
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             resolve("Promise 2 resolved");
+    //         }, 2000); // Resolves after 2 seconds
+    //     });
+    // }
+
+    // function combinePromises() {
+    //     return Promise.all([promise1(), promise2()]);
+    // }
+
+    // combinePromises()
+    //     .then(results => {
+    //         console.log("All promises resolved:", results);
+    //     })
+    //     .catch(error => {
+    //         console.error("Error:", error);
+    //     });
+
+
+
+
+
+    async function loadJSFile() {
+        try {
+            const response = await fetch('path/to/js/file.js');
+            if (response.ok) {
+                alert("JS file loaded successfully");
+            } else {
+                throw new Error("Error loading JS file");
+            }
+        } catch (error) {
+            alert("Error fetching JS file: " + error.message);
+        }
+    }
+
+    loadJSFile();
+
+
+
+
+
+
+
+</script>
+
+</html>
