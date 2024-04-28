@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    //Finally Clause
+
+    // we can use finally with try and catch
+    const f = () => {
+        try {
+            let a = 0;
+            console.log(program);
+            console.log("Program Run Successfully");
+            return
+        }
+        catch (err) {
+            console.log("This is an error");
+            // console.log(p);
+        }
+
+        finally {
+            // even if try catch fail Finally will always work
+            // in function even if function return in upper block the down block will always run no matter what happen
+
+            console.log("THIS IS FINALLY WHICH WILL RUN NO MATTER WHAT HAPPEN");
+
+            // close file
+            // exit loop    
+            // write log file
+        }
+
+    }
+    console.log("Start");
+    f();
+    console.log("End");
+
+
+</script>
+
+</html>
