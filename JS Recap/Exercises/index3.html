@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKERMAN</title>
+
+</head>
+
+<style>
+    body {
+        background-color: rgb(17, 15, 15);
+        text-align: center;
+    }
+
+    h1 {
+        color: rgb(1, 213, 1);
+        /* font-family: Impact, Haettenschweiler, '/', sans-serif; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 2px 2px #187f03;
+    }
+
+    h2 {
+        color: rgb(1, 213, 1);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* text-shadow :rgb(from re r g b); */
+    }
+
+    button {
+        padding: 8px;
+        font-size: x-large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: darkblue;
+        border-color: aqua;
+        text-shadow: 2px 2px #9996c4;
+
+    }
+
+    button:hover {
+        color: rgb(0, 0, 0);
+        background: #11ff00;
+    }
+
+    #name{
+        margin-top: 20px;
+        color: aliceblue;
+    }
+
+    .container {
+        padding: 9px;
+        margin: 9px;
+        /* display: ; */
+        border: solid 2px #3ef900;
+        border-radius: 10px;
+    }
+    #first, #second, #third, #fourth, #fifth {
+        color: rgb(1, 213, 1);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 2px 2px #0f3801;
+        margin-top: 10px;
+        padding: 8px;
+        border: solid 2px #33c304fb;
+        border-radius: 10px;
+    }
+
+</style>
+
+
+<body>
+
+
+    <h1>Welcome to HackGame</h1>
+    <h2>Click on below button</h2>
+
+    <button onclick="Type()"> Click Me Daddy</button>
+
+    <div id="name">Your Name Loading ... </div>
+    <div class="container">
+        <div id="first"> Processing...</div>
+        <div id="second">Processing...</div>
+        <div id="third">Processing...</div>
+        <div id="fourth">Processing...</div>
+        <div id="fifth">Processing...</div>
+    </div>
+
+
+
+
+</body>
+
+<script>
+
+
+    // create chain of promises using async function 
+    // display following lines in HTML
+
+    ///    intialising Hack program....
+    ///    Hacking ur Ga*d ....
+    ///    UserName Found Khikhikhi....
+    ///    Accessing ur BathRoom Pics
+    ///    Chud gaya re tu 
+    async function Type() {
+        const name = prompt("Enter Your Name");
+        document.getElementById("name").innerHTML = name;
+        await hack();
+    }
+
+
+
+    async function hack() {
+        try {
+            const a = await new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("Intializing Hack Program");
+                }, 1000);
+            });
+            console.log(a);
+            document.getElementById("first").innerHTML = a;
+
+            const b = await new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("Hacking ur Gan*d");
+                }, 2000);
+            });
+            console.log(b);
+            document.getElementById("second").innerHTML = b;
+
+            const c = await new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("UserName Found KHIKHIKHI");
+                }, 2000);
+            });
+            console.log(c);
+            document.getElementById("third").innerHTML = c;
+
+            const d = await new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("Chud gaya re tu");
+                }, 2000);
+            });
+            console.log(d);
+            document.getElementById("fourth").innerHTML = d;
+
+            const e = await new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("Accessing ur BathRoom Pics");
+                }, 2000);
+            });
+            console.log(e);
+            document.getElementById("fifth").innerHTML = e;
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+
+
+</script>
+
+
+
+</html>
